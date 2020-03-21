@@ -75,6 +75,7 @@ install_nvm_node() {
 install_apt_deps(){
   install_nvm_node
   nvm use
+  npm config set registry https://registry.npm.taobao.org
   npm install
   sudo apt-get update -y
   sudo apt-get install -qq python-software-properties -y
